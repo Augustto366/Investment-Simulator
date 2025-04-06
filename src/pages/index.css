@@ -1,0 +1,50 @@
+body {
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #a8e6cf, #56ab2f, #004d00);
+
+}
+
+.deg {
+    background: linear-gradient(135deg, #e0e0e0, #b2f2bb, #a0cfa0);
+}
+
+.btn-fade {
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.1s;
+    opacity: 0; 
+    transform: translateX(20px);
+  }
+  
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .p-fade {
+    animation: fadeIn 0.4s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .pincel {
+    font-size: 3rem;
+    color: white;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #3e8e41, #2e7031);
+    border-radius: 30% 70% 50% 50% / 40% 60% 40% 60%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
